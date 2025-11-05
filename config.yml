@@ -1,0 +1,20 @@
+Log:
+  Level: info
+  AccessPath: /opt/access.log
+  ErrorPath: /opt/error.log
+
+DnsConfigPath: /opt/dns.json
+Nodes:
+  - PanelType: "V2board"
+    ApiConfig:
+      ApiHost: "https://example.com"
+      ApiKey: "your_api_key_here"
+      NodeID: 1001
+      NodeType: V2ray
+    ControllerConfig:
+      ListenIP: 0.0.0.0
+      SendIP: 0.0.0.0
+      UpdatePeriodic: 60
+      EnableDNS: false
+      CertConfig:
+        CertMode: none

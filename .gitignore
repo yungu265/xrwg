@@ -1,0 +1,4 @@
+*.log
+dns.json
+config.yml
+wg.conf
