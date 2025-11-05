@@ -3,7 +3,7 @@ FROM debian:12
 LABEL maintainer="yourname <you@example.com>"
 LABEL description="XrayR + WireGuard container (WireGuard only active inside container)"
 
-RUN apt-get update &&     apt-get install -y curl wget unzip iproute2 wireguard-tools iptables &&     apt-get clean
+RUN apt-get update &&     apt-get install -y curl wget unzip iproute2 wireguard-tools iptables openresolv &&     apt-get clean
 
 WORKDIR /opt
 
